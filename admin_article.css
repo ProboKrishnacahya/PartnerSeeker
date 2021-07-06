@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: left;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+body::-webkit-scrollbar {
+    width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 4px solid black;
+    background-color: #0000CD;
+}
+
+::selection {
+    background-color: midnightblue;
+    color: white;
+}
+
+.menu,
+h1 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+div ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 60px;
+}
+
+/* a {
+    text-decoration: none;
+    color: #0000CD;
+}
+
+a:hover {
+    padding: 2vh;
+    border-radius: 5px;
+    background-color: #0000CD;
+    color: white;
+} */
+
+.logout,
+.create {
+    width: 12.5%;
+    margin: 3% 0 2% 43.5%;
+    padding: 1.75vh 2vh 1.75vh 2vh;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.logout {
+    background-color: transparent;
+    border: solid 1px red;
+    color: red;
+}
+
+.logout:hover {
+    font-size: unset;
+    box-shadow: 0px 0px 15px 0.1px red;
+    background-color: none;
+}
+
+.logoutText {
+    text-decoration: none;
+    color: red;
+}
+
+.logoutText:hover {
+    background-color: transparent;
+    color: red;
+}
+
+.create {
+    background-color: black;
+    border: solid 1px black;
+}
+
+.create:hover {
+    font-size: unset;
+    box-shadow: 0px 0px 15px 0.1px black;
+    background-color: none;
+}
+
+.createText {
+    text-decoration: none;
+}
+
+p {
+    margin: 3vh;
+}
+
+input,
+textarea {
+    font-family: 'Inter', sans-serif;
+}
+
+.judul,
+textarea {
+    margin-left: 1vh;
+    padding: 1vh;
+    border-radius: 5px;
+    border: solid 1px black;
+    outline: none;
+    columns: 90;
+}
+
+.judul:focus,
+textarea:focus {
+    border: solid 2px black;
+    background: none;
+}
+
+input[type=submit] {
+    width: 15%;
+    padding: 2vh;
+    border: none;
+    font-weight: bold;
+    border-radius: 50px;
+    background-color: #0000CD;
+    color: white;
+}
+
+input[type=submit]:hover {
+    box-shadow: 0px 0px 15px 1px #0000CD;
+}
+
+span {
+    margin-top: 50%;
+}
+
+/* MOBILE VIEW */
+@media only screen and (device-width: 414px) and (device-height: 736px) {
+    .create,
+    .logout {
+        width: 30%;
+        margin-left: 45vh;
+        padding: 2vh 5vh 2vh 5vh;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    textarea {
+        width: 85%;
+    }
+
+    input[type=submit] {
+        width: 30%;
+        padding: 2vh 5vh 2vh 5vh;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}

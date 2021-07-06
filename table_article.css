@@ -1,0 +1,124 @@
+body {
+    text-align: center;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+}
+
+table {
+    text-align: left;
+    margin: 15vh;
+}
+
+.readAdmin {
+    margin: 5vh;
+    border: 2px solid black;
+    padding: 0;
+}
+
+.td_readAdmin,
+.paragraf {
+    border: 1.5px solid black;
+}
+
+td {
+    padding: 2.5vh;
+}
+
+.center {
+    text-align: center;
+}
+
+.title_p {
+    width: 40%;
+    text-align: center;
+}
+
+.paragraf {
+    width: 40%;
+    white-space: pre-line;
+    font-weight: normal;
+}
+
+.update {
+    background-color: green;
+}
+
+.delete {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    text-align: center;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    max-width: 150%;
+    max-height: 300px;
+    border-radius: 5px;
+}
+
+.image {
+    max-width: 100%;
+}
+
+.scrollToTop {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 20px;
+    background: skyblue;
+    color: midnightblue;
+}
+
+.scrollToTop:hover {
+    background-color: deepskyblue;
+    color: midnightblue;
+}
+
+.create.p {
+    text-align: left;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.update.p {
+    text-align: left;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+summary {
+    color: blue;
+    cursor: pointer;
+}
+
+/* MOBILE VIEW */
+@media only screen and (device-width: 414px) and (device-height: 736px) {
+    img {
+        display: flex;
+        max-width: 100%;
+        max-height: 200px;
+    }
+    .readAdmin {
+        margin-right: -35vh;
+        padding-left: 1%;
+    }
+
+    h1{
+        padding-left: 60%;
+    }
+}

@@ -1,0 +1,165 @@
+/* DESKTOP VIEW */
+html {
+    scroll-behavior: smooth;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    font-family: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: relative;
+    width: 20%;
+    height: 37px;
+    top: 2vh;
+    left: -55vh;
+    filter: brightness(80%);
+}
+
+.logo:hover {
+    filter: brightness(120%);
+}
+
+.header {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    height: 70px;
+    padding: 2.5vh;
+    background: linear-gradient(45deg, deepskyblue, navy);
+}
+
+nav {
+    padding-bottom: 4vh;
+    text-align: right;
+}
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin-right: 3vh;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    padding: 6vh;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover {
+    transform: scale(1.25);
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+.active {
+    color: cyan;
+}
+
+body::-webkit-scrollbar {
+    width: 17px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 4px solid black;
+    background-color: #0000CD;
+}
+
+::selection {
+    background-color: midnightblue;
+    color: white;
+}
+
+nav,
+h1,
+h2 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.footer {
+    width: 100%;
+    height: 65px;
+    margin-top: 3%;
+    margin-bottom: -3%;
+    line-height: 70px;
+    list-style: none;
+    text-align: center;
+    background: linear-gradient(45deg, deepskyblue, navy);
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover {
+    color: cyan;
+}
+
+/* MOBILE VIEW */
+@media only screen and (device-width: 414px) and (device-height: 736px) {
+    .logo {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 60%;
+        height: 75px;
+        left: 10vh;
+        padding-bottom: 5.5vh;
+        filter: brightness(62.5%);
+    }
+
+    .header {
+        height: 120px;
+        background: linear-gradient(45deg, rgba(0, 191, 255, 0.712), rgba(0, 0, 128, 0.815));
+    }
+
+    nav {
+        padding-bottom: 2vh;
+        text-align: center;
+    }
+
+    nav ul {
+        display: contents;
+    }
+
+    nav ul li a {
+        padding: 2.25vh;
+    }
+
+    nav ul li:hover {
+        transform: none;
+    }
+
+    .footer {
+        margin-top: 3%;
+        margin-bottom: -10%;
+    }
+}
